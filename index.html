@@ -19,4 +19,9 @@
 <body>
   <video id="bg" src="file:///Users/Shared/livebg/test.mp4" autoplay muted loop playsinline></video>
 </body>
+<script>
+// 为了解决本地视频文件跨域问题，需要设置crossOrigin
+document.getElementById('bg').crossOrigin = 'anonymous';
+
+</script>
 </html>
